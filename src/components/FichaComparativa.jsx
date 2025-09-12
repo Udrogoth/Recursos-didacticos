@@ -10,6 +10,9 @@ export default function FichasComparativas({ titulo, criterios, items }) {
             className="border rounded-lg p-4 shadow-sm bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 transition"
           >
             <h3 className="text-xl font-semibold mb-2">{item.nombre}</h3>
+
+            <p className="text-sm mb-4 opacity-80">{item.descripcion}</p>
+
             <ul className="list-disc pl-4 space-y-1 text-sm">
               {criterios.map((criterio, i) => (
                 <li key={i}>
