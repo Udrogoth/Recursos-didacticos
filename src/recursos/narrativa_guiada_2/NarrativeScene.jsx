@@ -23,7 +23,7 @@ const NarrativeScene = ({ text, image }) => {
           />
         )
       )}
-      <p className="text-lg md:text-xl mb-6 leading-relaxed text-gray-700">
+      <p className="text-lg md:text-xl mb-6 leading-relaxed">
         {text}
       </p>
     </div>

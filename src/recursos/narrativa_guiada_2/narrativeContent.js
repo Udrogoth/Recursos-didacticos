@@ -1,3 +1,4 @@
+import salon from '../../img/salon.jpg';
 const narrativeContent = {
     scenes: {
       'intro': {
@@ -20,7 +21,7 @@ const narrativeContent = {
       },
       'reframe_1': {
         text: "El ambiente está pesado. Ves que un par de estudiantes están a punto de discutir. ¿Qué haces?",
-        image: 'https://images.pexels.com/photos/3184451/pexels-photo-3184451.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940', // Tensión entre estudiantes
+        image: salon, // Tensión entre estudiantes
         options: [
           { id: 'optA_1', text: 'Llamarles la atención en voz alta para que se detengan.', nextScene: 'feedbackA_reframe_fail' },
           { id: 'optA_2', text: 'Acercarte a su mesa y hablarles en voz baja.', nextScene: 'feedback_reframe_positive' }

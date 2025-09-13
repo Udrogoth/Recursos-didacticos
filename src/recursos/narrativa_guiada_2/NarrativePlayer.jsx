@@ -25,11 +25,9 @@ const NarrativePlayer = () => {
 
   const handleContinue = () => {
     if (lastFeedback && lastFeedback.reframe) {
-      // Si hay un re-intento, carga la escena de re-intento
       setCurrentSceneId(lastFeedback.reframe.nextScene);
       setLastFeedback(null);
     } else if (lastFeedback && lastFeedback.nextScene) {
-      // Si es una respuesta correcta o un re-intento fallido, continúa
       setCurrentSceneId(lastFeedback.nextScene);
       setLastFeedback(null);
     }
@@ -41,18 +39,18 @@ const NarrativePlayer = () => {
   };
 
   if (!currentScene) {
-    return <div className="text-center text-gray-500">Narrativa terminada. ¡Gracias por participar!</div>;
+    return <div className="text-center text-[var(--color-text)]">Narrativa terminada. ¡Gracias por participar!</div>;
   }
 
   return (
-    <div className="container mx-auto p-4 max-w-2xl bg-white shadow-lg rounded-lg mt-8">
+    <div className="container mx-auto p-4 max-w-2xl bg-[var(--color-bg)] text-[var(--color-text)] shadow-lg rounded-lg mt-8 transition-colors duration-300">
       {lastFeedback ? (
         <FeedbackDisplay
           feedbackText={lastFeedback.text}
           analysis={lastFeedback.analysis}
           isCorrect={lastFeedback.isCorrect}
           onContinue={handleContinue}
-          onRestart={handleRestart} // Pasamos la función de reinicio
+          onRestart={handleRestart}
           showRetryButton={!lastFeedback.isCorrect && lastFeedback.reframe}
         />
       ) : (
