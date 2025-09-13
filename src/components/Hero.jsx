@@ -12,17 +12,11 @@ export default function Hero() {
       </p>
       <div className="flex gap-4 flex-wrap justify-center">
         <NavLink
-          to="/fichas"
-          className="px-6 py-3 rounded bg-indigo-600 text-white hover:bg-indigo-700 transition"
-        >
-          Fichas y juegos
-        </NavLink>
-        <NavLink
-          to="/narrativa"
+          to="/dashboard"
           className="px-6 py-3 rounded bg-gray-200 text-gray-900 dark:bg-gray-800 dark:text-white
                      hover:bg-gray-300 dark:hover:bg-gray-700 transition"
         >
-          Ver Narrativa Técnica
+          Conoce mas sobre los recursos
         </NavLink>
       </div>
     </section>

@@ -1,8 +1,8 @@
 
 import { useState } from "react";
-import FichasComparativas from "../components/FichaComparativa";
-import JuegoAsocie from "../components/JuegoAsocie";
-import ResumenFichasComparativasModal from "../components/ResumenFichasComparativasModal";
+import FichasComparativas from "./FichaComparativa";
+import JuegoAsocie from "../juegos_asociaciones/JuegoAsocie";
+import ResumenFichasComparativasModal from "./ResumenFichasComparativasModal";
 
 export default function FichasPage() {
   const [juegoActivo, setJuegoActivo] = useState(false);

@@ -12,12 +12,7 @@ export default function PageEnConstruccion() {
           >
             Volver al inicio
           </a>
-          <a
-            href="/fichas"
-            className="px-6 py-3 bg-gray-200 text-gray-900 dark:bg-gray-800 dark:text-white rounded hover:bg-gray-300 dark:hover:bg-gray-700 transition"
-          >
-            Ver fichas disponibles
-          </a>
+
         </div>
       </section>
     );
