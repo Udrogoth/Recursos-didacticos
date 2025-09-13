@@ -5,13 +5,6 @@ export default function RecursosDidacticosDashboard() {
 
   const recursos = [
     {
-      icono: '🧠',
-      titulo: 'Fichas Cognitivas',
-      descripcion: 'Visualizan procesos mentales que afectan el aprendizaje.',
-      ruta: '/fichas-cognitivas',
-      disponible: false,
-    },
-    {
       icono: '📊',
       titulo: 'Fichas Comparativas',
       descripcion: 'Comparan modelos pedagógicos por criterios clave.',
@@ -44,12 +37,12 @@ export default function RecursosDidacticosDashboard() {
       titulo: 'Simulador',
       descripcion: 'Explora escenarios educativos interactivos.',
       ruta: '/simulador',
-      disponible: false,
+      disponible: true,
     },
   ];
 
   const manejarClick = (ruta, disponible) => {
-    navigate(disponible ? ruta : '/page-en-construccion');
+    navigate(disponible ? ruta : '/simulador');
   };
 
   return (

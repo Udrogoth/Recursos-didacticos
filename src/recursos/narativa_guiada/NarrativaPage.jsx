@@ -4,6 +4,7 @@ import ResumenNarrativaModal from './ResumenNarrativaModal';
 
 export default function NarrativaPage() {
   const [mostrarResumen, setMostrarResumen] = useState(false);
+  const [historial, setHistorial] = useState([]);
 
   return (
     <div className="min-h-screen px-6 py-12 bg-[var(--color-bg)] text-[var(--color-text)] transition-colors duration-300">
@@ -21,9 +22,14 @@ export default function NarrativaPage() {
         </button>
       </header>
 
-      <NarrativaGuiada />
+      <NarrativaGuiada setHistorial={setHistorial} />
 
-      {mostrarResumen && <ResumenNarrativaModal cerrar={() => setMostrarResumen(false)} />}
+      {mostrarResumen && (
+        <ResumenNarrativaModal
+          historial={historial}
+          cerrar={() => setMostrarResumen(false)}
+        />
+      )}
     </div>
   );
 }
