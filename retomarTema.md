@@ -52,4 +52,3 @@
 
 ---
 
-¿Quieres que preparemos una versión visual de este contexto como ficha editable o que lo estructuremos como plantilla para futuros proyectos? También puedo ayudarte a generar una presentación institucional con todo lo que has construido. Vamos afinando juntos.

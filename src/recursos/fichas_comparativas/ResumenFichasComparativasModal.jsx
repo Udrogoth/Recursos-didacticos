@@ -23,28 +23,6 @@ export default function ResumenFichasComparativasModal({ cerrar }) {
           </li>
         </ul>
 
-        {/* Navegación hacia recursos relacionados */}
-        <div className="mt-8 space-y-3 text-sm text-center">
-          <NavLink
-            to="/fichas-comparativas"
-            className="block text-indigo-600 hover:underline"
-          >
-            🔍 Ver fichas comparativas
-          </NavLink>
-          <NavLink
-            to="/juegos-asociacion"
-            className="block text-indigo-600 hover:underline"
-          >
-            🎮 Ir al juego de asociación
-          </NavLink>
-          <NavLink
-            to="/dashboards-pedagogicos"
-            className="block text-indigo-600 hover:underline"
-          >
-            📈 Explorar dashboards temáticos
-          </NavLink>
-        </div>
-
         {/* Botón de cierre */}
         <div className="text-center mt-6">
           <button
